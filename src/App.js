@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Translator from './Translator';
+import Translator from './components/Translator';
 
 function App() {
   return (
