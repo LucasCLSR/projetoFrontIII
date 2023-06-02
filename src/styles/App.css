@@ -10,29 +10,25 @@
   background-position: center;
 }
 
-.translatedArea {
-  width: 50%;
-  height: 200px;
-  margin-bottom: 20px;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
+.translatedArea,
 textarea {
   width: 50%;
-  height: 200px;
+  height: 100px;
+  box-sizing: border-box;
+  display: inline-block;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
+  background-color: aliceblue;
 }
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
 
 .button-container {
   display: flex;

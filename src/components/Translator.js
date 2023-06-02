@@ -19,12 +19,15 @@ const Translator = () => {
 
   return (
     <div className="container">
-        <h1>Tradutor</h1>
+        <h1>Tradutor Star Wars</h1>
         <textarea
         placeholder="Digite o texto a ser traduzido..."
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
         ></textarea>
+        <div className='translatedArea'>
+          {translatedText && <p>Tradução: {translatedText}</p>}
+        </div>
         <div className='button-container'>
           <button onClick={() => translateText('yoda')}>Traduzir para Yoda</button>
           <button onClick={() => translateText('sith')}>Traduzir para Sith</button>
@@ -32,9 +35,6 @@ const Translator = () => {
           <button onClick={() => translateText('huttese')}>Traduzir para Huttese</button>
           <button onClick={() => translateText('mandalorian')}>Traduzir para Mandalorian</button>
           <button onClick={() => translateText('cheunh')}>Traduzir para Cheunh</button>
-        </div>
-        <div className='translatedArea'>
-          {translatedText && <p>Tradução: {translatedText}</p>}
         </div>
     </div>
   );
