@@ -33,7 +33,9 @@ const Translator = () => {
           <button onClick={() => translateText('mandalorian')}>Traduzir para Mandalorian</button>
           <button onClick={() => translateText('cheunh')}>Traduzir para Cheunh</button>
         </div>
-        {translatedText && <p>Tradução: {translatedText}</p>}
+        <div className='translatedArea'>
+          {translatedText && <p>Tradução: {translatedText}</p>}
+        </div>
     </div>
   );
 
